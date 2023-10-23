@@ -17,3 +17,13 @@ model User {
 
   @@map("user")
 }
+
+model Meal {
+  id          String   @id @default(uuid())
+  name        String
+  description String
+  date        DateTime
+  inDiet      Boolean  @map("in_diet")
+
+  @@map("meal")
+}
