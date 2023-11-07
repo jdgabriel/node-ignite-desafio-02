@@ -16,3 +16,12 @@ user_id: ffc1fe42-93ce-4dd2-8a0d-3f6ffccbc4fc
   "inDiet": true
 }
 ###
+
+PUT http://localhost:3000/meal/0f17ff47-46e6-47ef-b6f3-6661f920ea05
+Content-Type: application/json
+user_id: ffc1fe42-93ce-4dd2-8a0d-3f6ffccbc4fc
+
+{
+  "inDiet": true
+}
+###

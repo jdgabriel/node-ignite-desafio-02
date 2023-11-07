@@ -22,7 +22,7 @@
 
 ## RNs
 
-- [ ] Não será possível cadastrar usuários duplicados;
+- [x] Não será possível cadastrar usuários duplicados;
 - [ ] O usuário só pode visualizar, editar e apagar as refeições o qual ele criou;
 
 ## RNFs
