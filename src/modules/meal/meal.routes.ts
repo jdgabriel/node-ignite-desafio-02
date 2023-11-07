@@ -4,6 +4,7 @@ import { CreateMeal } from "./useacases/create-meal.usecase";
 import { DeleteMeal } from "./useacases/delete-meal.usecase";
 import { FetchMeal } from "./useacases/fetch-meal.usecase";
 import { GetMeal } from "./useacases/get-meal.usecase";
+import { MetricsDietMeal } from "./useacases/metrics-diet-meal.usecase";
 import { UpdateMeal } from "./useacases/update-meal.usecase";
 
 export async function mealRoutes(app: FastifyInstance) {
@@ -12,4 +13,5 @@ export async function mealRoutes(app: FastifyInstance) {
   app.post("/", CreateMeal.execute);
   app.put("/:id", UpdateMeal.execute);
   app.delete("/:id", DeleteMeal.execute);
+  app.get("/metrics", MetricsDietMeal.execute);
 }
