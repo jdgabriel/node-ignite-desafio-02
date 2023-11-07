@@ -6,6 +6,7 @@ Content-Type: application/json
   "email": "jds.gabrielduarte@gmail.com"
 }
 ###
+
 POST http://localhost:3000/meal
 Content-Type: application/json
 user_id: ffc1fe42-93ce-4dd2-8a0d-3f6ffccbc4fc
@@ -17,6 +18,17 @@ user_id: ffc1fe42-93ce-4dd2-8a0d-3f6ffccbc4fc
 }
 ###
 
+GET  http://localhost:3000/meal/2118b3f6-47a0-49ce-9940-fcb7e2a3de9d
+Content-Type: application/json
+user_id: ffc1fe42-93ce-4dd2-8a0d-3f6ffccbc4fc
+
+###
+
+GET  http://localhost:3000/meal
+Content-Type: application/json
+user_id: ffc1fe42-93ce-4dd2-8a0d-3f6ffccbc4fc
+
+####
 PUT http://localhost:3000/meal/0f17ff47-46e6-47ef-b6f3-6661f920ea05
 Content-Type: application/json
 user_id: ffc1fe42-93ce-4dd2-8a0d-3f6ffccbc4fc
@@ -24,4 +36,9 @@ user_id: ffc1fe42-93ce-4dd2-8a0d-3f6ffccbc4fc
 {
   "inDiet": true
 }
+###
+
+DELETE http://localhost:3000/meal/0f17ff47-46e6-47ef-b6f3-6661f920ea05
+Content-Type: application/json
+user_id: ffc1fe42-93ce-4dd2-8a0d-3f6ffccbc4fc
 ###
