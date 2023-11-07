@@ -6,3 +6,13 @@ Content-Type: application/json
   "email": "jds.gabrielduarte@gmail.com"
 }
 ###
+POST http://localhost:3000/meal
+Content-Type: application/json
+user_id: ffc1fe42-93ce-4dd2-8a0d-3f6ffccbc4fc
+
+{
+  "name": "Arroz",
+  "description": "Arroz",
+  "inDiet": true
+}
+###
